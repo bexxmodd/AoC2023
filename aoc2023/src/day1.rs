@@ -23,7 +23,7 @@ pub fn solve() -> u32 {
   sum
 }
 
-fn convert_to_two_digit(digits: &Vec<char>) -> u32 {
+fn extract_two_digit(digits: &Vec<char>) -> u32 {
   return match digits.len() {
     1 => convert_string_to_digit(
       digits.first().unwrap(), digits.first().unwrap()),
